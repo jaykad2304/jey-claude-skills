@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Claude Skills Portfolio
 
 A collection of custom Claude skills I've built — reusable AI workflows that extend Claude's behavior for specific tasks.
@@ -33,3 +34,7 @@ These skills are built using the [Claude Code](https://claude.ai/code) skill sys
 ---
 
 *Built by Jaykumar*
+=======
+# jey-claude-skills
+Repository for building and refining AI-powered skills focused on brainstorming, automation, and continuous self-improvement. A collection of custom AI skills designed for idea generation, productivity, and intelligent automation.
+>>>>>>> 7205ac3e10e0e145e17b8ab1495c81aee7e7c26e
