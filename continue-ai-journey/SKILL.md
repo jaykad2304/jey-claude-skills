@@ -108,6 +108,13 @@ Add new topics to the correct phase WITH decision logic documented.
 - Identify ONE immediate project per phase
 - Make the "next milestone" explicit and concrete
 
+**Document All Changes (MANDATORY):**
+- Add new entry to "Recent Updates" section with date + items added + reasons
+- Include which bucket you chose (Conservative/Balanced/Ambitious)
+- For each new item, write why it was added (blocks milestone / field shift / prerequisite)
+- List any removed items with reasons
+- This creates an audit trail of your learning evolution
+
 **Common mistakes to avoid:**
 - ❌ Adding frameworks (LangChain) instead of concepts (function calling)
 - ❌ Including everything you *could* learn (leads to 50+ item paralysis)
@@ -129,19 +136,39 @@ When you feel uncertain about expansion level, reference this:
 | "This topic is important, I should add it" | "Important" ≠ "unblocks your milestone." Every item must pass: "Does this block my stated next milestone?" If no, Phase 3 or skip. |
 | "I'll add it with lower priority" | Tiers within a phase (required vs. optional) create confusion. Use Phases instead: Phase 1/2/3. If topic doesn't deserve Phase 1/2, make it explicitly Phase 3 or skip. |
 
-## Quick Reference: Update Checklist
+## Documenting New Learnings: "Recent Updates" Section
 
-Before saving progress.md:
+**Every time you update**, add a new entry to the "Recent Updates" section showing:
 
-- [ ] Updated timestamp to today (YYYY-MM-DD)
-- [ ] Completion rate reflects actual checkboxes
-- [ ] **One** explicit primary gap identified (not multiple vague ones)
-- [ ] Phase 1 items blocked by Phase 1 prerequisites (not Phase 2 dependencies)
-- [ ] Each phase has 3-4 checkpoints (milestone achievements, not just item completions)
-- [ ] Checkpoints are specific: "Complete RAG proof-of-concept" not "Understand RAG"
-- [ ] "Next Immediate Milestones" (1-4 items max) are concrete and timebox-able
-- [ ] Added "April 2026 context" note if field shifted since last update
-- [ ] Scope expansion documented: "Added X items (Conservative/Balanced/Ambitious bucket) due to Y field shift"
+**What to document:**
+- Date of update
+- How many items added (or removed)
+- Which bucket you chose (Conservative/Balanced/Ambitious)
+- For EACH new item: What it is + Why it was added
+
+**Example entry:**
+```markdown
+### Recent Updates (What Changed)
+
+**Updated 2026-05-20:** Added 5 Phase 2 items (Scope: Balanced bucket, +15% expansion)
+- **Evaluation automation (evals-as-code)** — Reason: Field shift (May 2026 mainstream)
+- **Streaming multimodal pipelines** — Reason: Extends Phase 2 practical apps
+- **Agent evaluation patterns** — Reason: Blocks Phase 2 agentic reasoning work
+- **Cost optimization for LLM systems** — Reason: Production readiness prerequisite
+- **Reasoning model applications** — Reason: Promoted from Phase 3 (o1/o3 now production-ready)
+
+**Updated 2026-04-28:** Added 6 items (Scope: Balanced bucket, +27% expansion)
+- **Vector embeddings & representation learning** — Reason: Unblocks RAG milestone
+- **Multimodal models (vision + text)** — Reason: Field shift (April 2026 baseline)
+- **LLM evaluation fundamentals** — Reason: Production quality assurance
+- ...
+```
+
+**Why this matters:**
+- Future you can see the evolution of your learning path
+- You understand why each topic was added
+- Easy to audit if a topic is still relevant
+- Shows progression of April 2026 field state
 
 ## Structure Template
 
@@ -173,6 +200,17 @@ Use this structure to keep progress.md consistent:
 
 ### Recent Achievements
 - Completed: [Item] (Date)
+
+### Recent Updates (What Changed)
+**Updated [Date]:** Added X new items (Scope: Conservative/Balanced/Ambitious)
+- [New Item 1] — Reason: [Unblocks milestone / Field shift / Phase prerequisite]
+- [New Item 2] — Reason: [Unblocks milestone / Field shift / Phase prerequisite]
+- [Removed Item 1] — Reason: [Redundant with / Scope reduction / Out of scope]
+
+**Updated [Previous Date]:** Added Y new items
+- ...
+
+---
 
 ### Current Gap
 - **Immediate need:** [One primary blocker]
