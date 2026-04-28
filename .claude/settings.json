@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": ".*commit this.*",
+        "hooks": [
+          {
+            "type": "agent",
+            "prompt": "The user typed 'commit this'. Run the smart-commit workflow: 1) Check git status for staged/unstaged changes 2) Detect if GitHub or GitLab 3) Handle any merge conflicts 4) Analyze the changes and suggest a commit message 5) Create a well-formatted commit with the suggested message. Execute the full smart-commit workflow now."
+          }
+        ]
+      }
+    ]
+  }
+}
