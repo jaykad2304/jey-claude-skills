@@ -1,0 +1,23 @@
+{
+  "skill_name": "smart-commit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I've made some changes to the authentication module in my project. I've already staged the changes with git add. Now I want to commit this work to my develop branch. My repo is on GitHub. Please help me commit these changes and create a PR. Don't create a feature branch this time. Once the PR is created, assume it's approved and I'll say 'yes' when you ask.",
+      "expected_output": "The skill should detect the GitHub repo, suggest a commit message based on auth module changes, ask for confirmation/edit, commit and push to develop, create a PR targeting develop, ask if it's approved, and when user says yes, auto-merge to develop. Output a brief summary with the PR URL.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I've been working on a new API endpoint and I've staged my changes. There's a merge conflict with the develop branch that happened while I was working. My repo is on GitLab. Can you help me commit this? I want to create a feature branch for this work. When the MR is ready, assume it's been approved and I'll say 'yes'.",
+      "expected_output": "The skill should detect GitLab, handle the merge conflict automatically, suggest a commit message, create a feature branch from develop, commit and push, create a GitLab MR (merge request) targeting develop, ask if approved, and when user says yes, auto-merge to develop. Show the summary with the MR URL.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "commit this",
+      "expected_output": "The skill should handle a minimal prompt by: checking git status, detecting the repo platform, handling any conflicts, suggesting a commit message, asking about feature branch, and proceeding with the full workflow including PR creation and approval step. Should work with changes already staged.",
+      "files": []
+    }
+  ]
+}
